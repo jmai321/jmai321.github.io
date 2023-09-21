@@ -224,7 +224,7 @@ section {
 }
 
 #skills {
-    height: auto;
+    height: 100vh;
     background-color: rgba(235, 238, 238);
     padding: 20px;
     display: flex;
@@ -252,6 +252,7 @@ section {
 
 .skill-name {
     font-weight: bold;
+    font-size: 30px;
 }
 
 .skill-progress {
@@ -267,6 +268,7 @@ section {
 }
 
 .courseworks {
+    font-size: 20px;
     list-style-type: disc;
     padding-left: 20px;
     margin: 0;
