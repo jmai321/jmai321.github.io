@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+}
+
+#navbar {
+    background-color: rgba(0,0,0,0.70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    scroll-behavior: smooth;
+}
+
+#home {
+    background-image: url(background.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 200px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.homepage h1 {
+    margin: 0px;
+    font-size: 80px;
+}
+
+.homepage p {
+    margin: 15px 0px 0px 0px;
+    font-size: 20px;
+}
+
+.images {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-icon {
+    width: 60px;
+    height: auto;
+    margin: 0 30px;
+}
+
+.resume-icon {
+    width: 100px;
+    height: auto;
+    margin: 0px;
+}
+
+
+.linkedin-icon {
+    width: 100px;
+    height: auto;
+    margin: 0 30px 0px 0px;
+}
+
+
+#about {
+    background-color: rgba(0,0,0,0.87);
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.aboutme h5 {
+    color: orange;
+    font-size: 24px;
+    margin: 0;
+    padding: 100px 0 25px 0;
+}
+.aboutme h1 {
+    margin: 0;
+    padding: 0px 0px 35px 0px;
+}
+
+.aboutme p {
+    font-size: 23px;
+    text-align: center;
+    width: 700px;
+    color: #888888;
+    line-height: 1.5;
+}
+
+#projects {
+    background-color: rgba(255, 255, 255);
+    height: 120vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px;
+}
+
+.projectpage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+
+.projectpage h5 {
+    color: orange;
+    font-size: 24px;
+    margin: 0;
+    padding: 100px 0px 35px 0px;
+}
+.projectpage h1 {
+    margin: 0;
+    font-size: 30px;
+    padding: 0px 0px 100px 0px;
+}
+
+.project-seperate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project h1 {
+    font-size: 20px;
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+}
+
+.project p {
+    font-size: 18px;
+    text-align: center;
+}
+
+#proj1 {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    margin-bottom: 20px;
+}
+
+#proj2 {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    margin-bottom: 20px;
+}
+
+#proj3 {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    margin-bottom: 20px;
+}
+
+#skills {
+    height: auto;
+    background-color: rgba(235, 238, 238);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills-left {
+    padding-right: 20px;
+    margin: 0px 400px 0px 20px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-progress {
+    background-color: #f0f0f0;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.skill-bar {
+    height: 100%;
+    border-radius: 5px;
+    background-color: lightskyblue;
+}
+
+.courseworks {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.courseworks li {
+    margin-bottom: 15px; 
+}
+
+
+#contact {
+    background-color: rgba(0, 0, 0, 0.46);
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="navbar">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="homepage">
+            <h1>Jonathan Mai</h1>
+            <p>computer science student at csuf</p>
+            <div class="images">
+                <a href="https://github.com/jmai321" target="_blank">
+                    <img class="github-icon" src="github.png" alt="GitHub">
+                </a>
+                <a href="resume.pdf" download>
+                    <img class="resume-icon" src="resume.png" alt="Download Resume">
+                </a>
+                
+                <a href="https://www.linkedin.com/in/jonathan-mai-881458266/" target="_blank">
+                    <img class="linkedin-icon" src="linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="aboutme">
+            <h5>About</h5>
+            <h1>Let me introduce myself.</h1>
+            <p>Welcome to my personal portfolio website, where you can see a showcase of my skills and experience in Computer Science. As a dedicated Computer Science student at California State University, Fullerton and with a trajectory set to graduate in just 2 1/2 years (cumulative), I bring a strong commitment to efficiency and excellence to every project. From python scripts, to C++ apps, I have a proven track record of delivering high-quality results. My website is designed to be easy to navigate, showcasing my best work and achievements in a visually appealing way. Take a look and see how I can help you achieve your goals</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projectpage">
+            <h5>Projects</h5>
+            <h1>Discover my works.</h1>
+            <div class="project-seperate">
+                <div class="project">
+                    <img id="proj1" src="proj1.png">
+                    <h1>PDF Merge/Seperate App</h1>
+                    <p>Developed a Python script to merge and separate individual pages within PDF files, designed to overcome limitations of certain PDF applications lacking this functionality.</p>
+                </div>
+                <div class="project">
+                    <img id="proj2" src ="proj2.png">
+                    <h1>Simple Calculator App</h1>
+                    <p>Programmed a simple calculator app using C++. Designed a front-end using svelte framework. Maintained git version control.</p>
+                </div>
+                <div class="project">
+                    <img id="proj3" src ="proj3.png">
+                    <h1>Boolean Algebra Calculator</h1>
+                    <p>Programmed a calculator in C++ where when given a boolean expression would identify laws and simplify the expression. The program also provides a truth table for the given expression.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills-container">
+            <div class="skills-left">
+                <h1>skills</h1>
+                <div class="skill">
+                    <span class="skill-name">C++</span>
+                    <div class="skill-progress">
+                        <div class="skill-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Python</span>
+                    <div class="skill-progress">
+                        <div class="skill-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">JS/TS/React</span>
+                    <div class="skill-progress">
+                        <div class="skill-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-right">
+                <h1>relevant coursework</h1>
+                <ul class="courseworks">
+                    <li>Data Structures & Algorithms</li>
+                    <li>Computer Organization & Assembly Language</li>
+                    <li>File Structure & Database Systems</li>
+                    <li>Operating System Concepts</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSflhtHeUr0t7X17mXPrPGR_HkyJ7u8dg67PYBL6wZS9Lum7Sg/viewform?embedded=true" width="640" height="554" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
