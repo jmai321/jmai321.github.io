@@ -1,5 +1,7 @@
 # Personal Portfolio
-Name: Jonathan Mai   
-Email: jmai2004@csu.fullerton.edu / jonathannmai@gmail.com  
+Personal Portfolio displaying info about myself and project I've developed  
+
+Jonathan Mai  
+jonathannmai@gmail.com / jmai2004@csu.fullerton.edu
 
 
