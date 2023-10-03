@@ -1,5 +1,5 @@
 # Personal Portfolio
-* Personal Portfolio displaying info about myself and project I've developed.
+* Personal Portfolio displaying info about myself and projects I've developed.
 * Developed using vanilla Javascript/HTML/CSS.
 * Access through: https://github.com/jmai321/personal-portfiolio  
   
