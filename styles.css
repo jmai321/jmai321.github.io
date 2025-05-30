@@ -300,6 +300,19 @@ section {
     margin-bottom: 1rem;
 }
 
+.about .section-header {
+    margin-bottom: 2rem;
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    color: #495057;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
 .section-description {
     font-size: 1.1rem;
     color: #6c757d;
@@ -311,6 +324,7 @@ section {
 /* About Section */
 .about {
     background: var(--light-bg);
+    padding: 5rem 0;
 }
 
 .about-content {
@@ -319,18 +333,24 @@ section {
     margin: 0 auto;
 }
 
-.about-intro {
-    font-size: 1.2rem;
-    color: #495057;
-    margin-bottom: 2rem;
-    line-height: 1.8;
-    text-align: center;
-}
-
 .about-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    align-items: start;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-item:first-child {
+    text-align: left;
+}
+
+.about-item:last-child {
+    text-align: left;
 }
 
 .about-item h3 {
@@ -383,6 +403,7 @@ section {
 /* Projects Section */
 .projects {
     background: white;
+    padding: 5rem 0;
 }
 
 .projects-grid {
@@ -533,6 +554,7 @@ section {
 /* Skills Section */
 .skills {
     background: var(--light-bg);
+    padding: 5rem 0;
 }
 
 .skills-content {
@@ -661,6 +683,7 @@ section {
 /* Contact Section */
 .contact {
     background: white;
+    padding: 5rem 0;
 }
 
 .contact-content {
