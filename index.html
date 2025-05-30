@@ -1,128 +1,423 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Mai - ECE Graduate Student</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul id="navbar">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="logo">
+                    <span>Jonathan Mai</span>
+                </div>
+                <ul id="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section id="home">
-        <div class="homepage">
-            <h1>Jonathan Mai</h1>
-            <p>computer science student at csuf</p>
-            <div class="images">
-                <a href="https://github.com/jmai321" target="_blank">
-                    <img class="github-icon" src="github.png" alt="GitHub">
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Jonathan Mai</span>
+                </h1>
+                <h2 class="hero-subtitle">MS ECE Student | Machine Learning & Data Science</h2>
+                <p class="hero-description">
+                    Incoming graduate student at UC San Diego specializing in Machine Learning and Data Science, 
+                    with a passion for developing innovative AI solutions and advancing computational intelligence.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="resume.pdf" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-links">
+                <a href="https://github.com/jmai321" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
                 </a>
-                <a href="resume.pdf" download>
-                    <img class="resume-icon" src="resume.png" alt="Download Resume">
+                <a href="https://www.linkedin.com/in/jonathan-mai-881458266/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/jonathan-mai-881458266/" target="_blank">
-                    <img class="linkedin-icon" src="linkedin.png" alt="LinkedIn">
+                <a href="mailto:jonathannmai@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
                 </a>
             </div>
         </div>
-    </section>
-
-    <section id="about">
-        <div class="aboutme">
-            <h5>About</h5>
-            <h1>Let me introduce myself.</h1>
-            <p>Welcome to my personal portfolio website, where you can see a showcase of my skills and experience. I'm Jonathan Mai, a Computer Science student with a passion for turning ideas into reality through code. Currently pursuing a Bachelor of Science in Computer Science at Cal State University, Fullerton, I'm on track to graduate in 2024 (2 years cumulative) with a GPA of 3.73.</p>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="projectpage">
-            <h5>Projects</h5>
-            <h1>Discover my works.</h1>
-            <div class="project-seperate">
-                <div class="project">
-                    <a href="https://github.com/jmai321/financialapp" target="_blank">
-                        <img id="proj1" src="proj1.jpg" alt="iOS Personal Finance App" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
-                    </a>
-                    <h1>AI iOS Personal Finance App</h1>
-                    <p>iOS app with SwiftUI and OpenAI integration that provides budgeting tools, reminder notifications, and a chatbot for personalized financial advice and management.</p>
-                </div>
-                <div class="project">
-                    <a href="https://devpost.com/software/repeat-remix" target="_blank">
-                        <div style="width: 200px; height: 200px; border-radius: 50%; background-color: black; display: flex; align-items: center; justify-content: center;">
-                            <img id="proj2" src="proj2.jpg" alt="React.app" style="width: 180px; height: 180px; border-radius: 50%; object-fit: contain;">
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Passionate About Innovation</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Welcome to my portfolio. I'm Jonathan Mai, an aspiring engineer and researcher 
+                        at the intersection of machine learning, data science, and computer science.
+                    </p>
+                    <div class="about-details">
+                        <div class="about-item">
+                            <h3>Education</h3>
+                            <div class="education-item">
+                                <h4>MS in Electrical & Computer Engineering</h4>
+                                <p><strong>University of California, San Diego</strong> • 2024-2026</p>
+                                <p>Focus: Machine Learning & Data Science (MLDS)</p>
+                            </div>
+                            <div class="education-item">
+                                <h4>BS in Computer Science</h4>
+                                <p><strong>California State University, Fullerton</strong> • Graduated 2024</p>
+                                <p>GPA: 3.72 • Completed in 2 years</p>
+                            </div>
                         </div>
-                    </a>
-                    <h1>Rewind.app</h1>
-                    <p>Stay focused during Zoom lectures with Rewind. It lets you rewind in real-time and catch key moments with empowered highlights, so you never fall behind.</p>
+                        <div class="about-item">
+                            <h3>Research Interests</h3>
+                            <ul class="interests-list">
+                                <li>Machine Learning & Deep Learning</li>
+                                <li>Computer Vision & NLP</li>
+                                <li>Data Science & Analytics</li>
+                                <li>AI Applications in Finance & Biology</li>
+                                <li>Intelligent Systems</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="project">
-                    <a href="https://github.com/jmai321/spotifymoodanalyzer" target="_blank">
-                        <img id="proj3" src="proj3.jpg" alt="Spotify Mood Analyzer" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
-                    </a>
-                    <h1>Spotify Mood Analyzer</h1>
-                    <p>Music analysis web-app that integrates with Spotify, allowing users to authenticate, retrieve their recently listened songs, analyze mood using Spotify's audio valence feature, and visualize their mood trends.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A showcase of my work in machine learning, software development, and data science
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj3.jpg" alt="Spotify Mood Analyzer">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jmai321/spotifymoodanalyzer" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Spotify API</span>
+                            <span class="tag">Data Viz</span>
+                        </div>
+                        <h3>Spotify Mood Analyzer</h3>
+                        <p>Data science web application that analyzes user's music listening patterns, extracts mood 
+                           indicators using Spotify's audio features, and visualizes emotional trends over time.</p>
+                    </div>
+                    <a href="https://github.com/jmai321/spotifymoodanalyzer" target="_blank" class="project-card-link"></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="vrecover.png" alt="VRecover VR Exposure Therapy Platform">
+                        <div class="project-overlay">
+                            <a href="vrecover.pdf" download target="_blank" class="project-link">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Unity VR</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">FishNet</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <h3>VRecover: VR Exposure Therapy Platform</h3>
+                        <p>Virtual reality application that enables therapists to create and customize exposure therapy scenarios for treating phobias. Built with Unity VR and networked using FishNet for multi-user therapeutic sessions with cloud infrastructure support.</p>
+                    </div>
+                    <a href="vrecover.pdf" download target="_blank" class="project-card-link"></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="emailsvm.png" alt="Email SVM Sentiment Analysis">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jmai321/email-svm-sentiment-analysis" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SVM</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">TextBlob</span>
+                            <span class="tag">Data Viz</span>
+                        </div>
+                        <h3>Email SVM Sentiment Analysis</h3>
+                        <p>Machine learning system that classifies spam emails using Support Vector Machines and analyzes sentiment polarity. Implements GridSearchCV for parameter optimization and generates comprehensive visualizations including accuracy heatmaps and sentiment distribution graphs.</p>
+                    </div>
+                    <a href="https://github.com/jmai321/email-svm-sentiment-analysis" target="_blank" class="project-card-link"></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj1.jpg" alt="AI iOS Personal Finance App">
+                        <div class="project-overlay">
+                            <a href="https://github.com/jmai321/financialapp" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Swift</span>
+                            <span class="tag">SwiftUI</span>
+                            <span class="tag">OpenAI</span>
+                        </div>
+                        <h3>AI Personal Finance App</h3>
+                        <p>iOS application featuring AI-powered financial advice, budgeting tools, and intelligent 
+                           notifications. Integrates OpenAI's API for personalized financial guidance and expense analysis.</p>
+                    </div>
+                    <a href="https://github.com/jmai321/financialapp" target="_blank" class="project-card-link"></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj2.jpg" alt="Rewind App">
+                        <div class="project-overlay">
+                            <a href="https://devpost.com/software/repeat-remix" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">WebRTC</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3>Rewind - Smart Lecture Tool</h3>
+                        <p>Real-time lecture assistance tool that enables users to rewind Zoom sessions and highlights 
+                           key moments using machine learning for content analysis and engagement tracking.</p>
+                    </div>
+                    <a href="https://devpost.com/software/repeat-remix" target="_blank" class="project-card-link"></a>
                 </div>
             </div>
         </div>
     </section>
     
-    <section id="skills">
-        <div class="skills-container">
-            <div class="skills-left">
-                <h1>skills</h1>
-                <div class="skill">
-                    <span class="skill-name">JS/TS/React</span>
-                    <div class="skill-progress">
-                        <div class="skill-bar" style="width: 220%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span class="skill-name">Python</span>
-                    <div class="skill-progress">
-                        <div class="skill-bar" style="width: 200%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span class="skill-name">C++</span>
-                    <div class="skill-progress">
-                        <div class="skill-bar" style="width: 125%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span class="skill-name">Swift</span>
-                    <div class="skill-progress">
-                        <div class="skill-bar" style="width: 90%;"></div>
-                    </div>
-                </div>
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technical Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
             </div>
-            <div class="skills-right">
-                <h1>relevant coursework</h1>
-                <ul class="courseworks">
-                    <li>Data Structures & Algorithms</li>
-                    <li>Artifical Intelligence</li>
-                    <li>Compilers and Languages</li>
-                    <li>Computer Organization & Assembly Language</li>
-                    <li>File Structure & Database Systems</li>
-                    <li>Operating System Concepts</li>
-                    <li>Python Programming</li>
-                    <li>Foundations of Software Engineering</li>
-                </ul>
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-brain"></i>
+                            <h3>Machine Learning & AI</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PyTorch</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="30%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Scikit-learn</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="30%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Software Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">JS/TS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Swift</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="30%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Data & Systems</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">SQL/NoSQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="50%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C++</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="40%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">AWS/Cloud</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="30%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coursework-section">
+                    <h3>Relevant Coursework</h3>
+                    <div class="coursework-grid">
+                        <div class="course-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Artificial Intelligence</span>
+                        </div>
+                        <div class="course-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Data Science & Big Data</span>
+                        </div>
+                        <div class="course-item">
+                            <i class="fas fa-code"></i>
+                            <span>Algorithm Engineering</span>
+                        </div>
+                        <div class="course-item">
+                            <i class="fas fa-server"></i>
+                            <span>Back End Engineering</span>
+                        </div>
+                        <div class="course-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Network Security</span>
+                        </div>
+                        <div class="course-item">
+                            <i class="fas fa-sitemap"></i>
+                            <span>Software Architecture</span>
+                        </div>
+                    </div>
+
+                    <h3>Additional Foundation Courses</h3>
+                    <div class="foundation-courses">
+                        <span class="foundation-item">Data Structures & Algorithms</span>
+                        <span class="foundation-item">Database Systems</span>
+                        <span class="foundation-item">Operating Systems</span>
+                        <span class="foundation-item">Software Engineering</span>
+                        <span class="foundation-item">Computer Organization</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
-    <section id="contact">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSflhtHeUr0t7X17mXPrPGR_HkyJ7u8dg67PYBL6wZS9Lum7Sg/viewform?embedded=true" width="640" height="554" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-description">
+                    I'm actively seeking internships, research opportunities, and full-time positions in ML/AI and software engineering. Let's connect!
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>jonathannmai@gmail.com</p>
+                            <p>jomai@ucsd.edu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Diego, CA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Institution</h4>
+                            <p>UC San Diego</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSflhtHeUr0t7X17mXPrPGR_HkyJ7u8dg67PYBL6wZS9Lum7Sg/viewform?embedded=true" 
+                            width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+                        Loading…
+                    </iframe>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Jonathan Mai. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Back to Top</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
